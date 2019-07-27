@@ -1,0 +1,24 @@
+@import url("/reset.css");
+nav {
+  background: #8cd3c9;
+}
+nav ul {
+  background: url("/img/dog_foot.png") repeat-x 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+nav ul li {
+  padding: 10px 50px 10px 0;
+}
+nav ul li a {
+  display: block;
+  font: 14px "Open Sanse" 400 14px;
+  color: #fff;
+  display: inline-block;
+  background: #8cd3c9;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
