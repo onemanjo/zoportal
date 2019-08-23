@@ -10,6 +10,7 @@ nav ul {
 }
 nav ul li {
   padding: 10px 50px 10px 0;
+  background: red;
 }
 nav ul li a {
   display: block;

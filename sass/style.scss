@@ -16,15 +16,17 @@ nav {
         align-content: center;
         li {
            padding: 10px 50px 10px 0;
+           background: red;
 
            a {
-               display: block;
+            display: block;
             font: $nav_font;
             color: $white;
             display: inline-block;
             background: $maincolor;
             cursor: pointer;
             text-decoration: underline;
+            
         }
         }
     }
