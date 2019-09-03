@@ -1,4 +1,4 @@
-@import url('/reset.css');
+@import url('../reset.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 $nav_font: 14px "Open Sanse"400 14px;
 $white: #fff;
@@ -11,7 +11,7 @@ nav {
     background: $maincolor;
 
     ul {
-        background: url("/img/dog_foot.png") repeat-x 10px;
+        background: url("../img/dog_foot.png") repeat-x 10px;
         display: flex;
         justify-content: center;
         align-content: center;
@@ -36,7 +36,7 @@ nav {
     border-bottom: 1px solid #99dad2;
     .wrapper
     {
-        width: 1000px;
+        width: 1200px;
         margin: 0 auto;
         
     }
@@ -83,19 +83,20 @@ nav {
             border: none;
             font-size: 17px;
             box-sizing: border-box;
-            float: right;
+            float: left;
+            margin-left: 20px;
         }
         i
         {
             height: 20px;
-            color: #fff;
+            color: $white;
         }
         
     }
     .right_img
     {
         float: left;
-        background: url(/img/dog_header.png);
+        background: url(../img/dog_header.png);
         height: 116px;
         width: 175px;
         margin-top: 12px;
@@ -124,7 +125,7 @@ nav {
         
         .leg
         {
-            background: url(/img/singl_dog_foot.png) no-repeat;
+            background: url(../img/singl_dog_foot.png) no-repeat;
             height: 20px;
             width: 20px;
         }
@@ -139,7 +140,7 @@ nav {
             a{
                 cursor: pointer;
                 text-decoration: none;
-                color: #ffffff;
+                color:$white;
                 font-family: "Roboto Condensed";
                 font-size: 20px;
                 font-weight: 400;
@@ -156,7 +157,6 @@ nav {
         clear: both;
         display: block;
     }
-
 
 }
 
