@@ -2,11 +2,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 $nav_font: 14px "Open Sanse"400 14px;
+$font_sanse: "Open Sanse";
+$font_robo: "Roboto Condensed";
 $white: #fff;
 $maincolor: #8cd3c9;
 $secondColor:#6ac4b8;
 $theredColor: #157d8c;
 $yellowcolor:#fed34f;
+a
+{
+    cursor: pointer;
+}
 nav {
     background: $maincolor;
     ul {
@@ -22,7 +28,6 @@ nav {
                 color: $white;
                 display: inline-block;
                 background: $maincolor;
-                cursor: pointer;
                 text-decoration: underline;
             }
         }
@@ -48,12 +53,13 @@ nav {
             position: relative;
             letter-spacing: 1.5px;
             color: $theredColor;
-            font-family: "Open Sans";
+            font-family: $font_sanse;
             font-size: 22px;
             font-style: italic;
             line-height: 53px;
             span {
                 font-weight: 700;
+                
             }
         }
         .srch {
@@ -61,7 +67,13 @@ nav {
             width: 411px;
             height: 30px;
             float: left;
+            padding-left: 20px;
+            
         }
+        input::placeholder
+            {
+                color: $theredColor;
+            }
         button {
             cursor: pointer;
             height: 30px;
@@ -71,7 +83,7 @@ nav {
             font-size: 17px;
             box-sizing: border-box;
             float: left;
-            margin-left: 20px;
+            margin-left: 5px;
         }
         i {
             height: 20px;
@@ -114,7 +126,7 @@ nav {
                 cursor: pointer;
                 text-decoration: none;
                 color: $white;
-                font-family: "Roboto Condensed";
+                font-family: $font_robo;
                 font-size: 20px;
                 font-weight: 400;
                 letter-spacing: 0.4px;
@@ -151,7 +163,7 @@ nav {
                     padding-top: 10px;
                     h2 {
                         color: $white;
-                        font-family: "Roboto Condensed";
+                        font-family: $font_robo;
                         font-size: 22px;
                         font-weight: 500;
                     
@@ -166,7 +178,7 @@ nav {
                     h3
                     {
                         margin-bottom: px;
-                        font-family: "Roboto Condensed";
+                        font-family: $font_robo;
                         font-size: 18px;
                         font-weight: 400;
                         line-height: 24px;
@@ -178,7 +190,7 @@ nav {
                     }
                     label
                     {
-                        font-family: "Open Sans";
+                        font-family: $font_sanse;
                         font-size: 14px;
                         font-weight: 400;
                         line-height: 18px;
@@ -233,10 +245,11 @@ nav {
                     position: relative;
                     a
                     {
-                        font-family: "Roboto Condensed";
+                        font-family: $font_robo;
                         color: $yellowcolor;
                         font-size: 18px;
                         font-weight: 700;
+                        
                     }
                 }
                 li:after
