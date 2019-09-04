@@ -1,5 +1,6 @@
 @import url("../reset.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 nav {
   background: #8cd3c9;
 }
@@ -27,7 +28,7 @@ nav ul li a {
   border-bottom: 1px solid #99dad2;
 }
 .header .wrapper {
-  width: 1200px;
+  width: 960px;
   margin: 0 auto;
 }
 .header .logo {
@@ -36,7 +37,7 @@ nav ul li a {
 }
 .header .search_header {
   padding-top: 15px;
-  margin-left: 116px;
+  margin-left: 100px;
   float: left;
 }
 .header .search_header h1 {
@@ -78,7 +79,7 @@ nav ul li a {
   height: 116px;
   width: 175px;
   margin-top: 12px;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 .header .clr {
   clear: both;
@@ -122,6 +123,103 @@ nav ul li a {
   content: "";
   clear: both;
   display: block;
+}
+
+.container {
+  background: #fff;
+}
+.container .wrapper {
+  width: 960px;
+  background: #fff;
+  margin: 30px auto;
+}
+.container .wrapper .questions .carusel {
+  float: left;
+}
+.container .wrapper .questions .question {
+  float: right;
+}
+.container .wrapper .questions .question .qhead {
+  background: #fed34f;
+  height: 30px;
+  width: 300px;
+  text-align: center;
+  padding-top: 10px;
+}
+.container .wrapper .questions .question .qhead h2 {
+  color: #fff;
+  font-family: "Roboto Condensed";
+  font-size: 22px;
+  font-weight: 500;
+}
+.container .wrapper .questions .question .qBody {
+  background-color: #f3f3f3;
+  max-width: 270px;
+  padding: 20px 10px 20px 20px;
+}
+.container .wrapper .questions .question .qBody h3 {
+  margin-bottom: px;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.container .wrapper .questions .question .qBody input + label:hover {
+  cursor: pointer;
+}
+.container .wrapper .questions .question .qBody label {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.container .wrapper .questions .question .qBody input[type=checkbox] + label {
+  display: block;
+}
+.container .wrapper .questions .question .qBody input[type=checkbox] {
+  display: none;
+}
+.container .wrapper .questions .question .qBody input[type=checkbox] + label::before {
+  content: "\2714";
+  color: white;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-top: 19px;
+  margin-right: 10px;
+  color: transparent;
+  text-align: center;
+}
+.container .wrapper .questions .question .qBody input[type=checkbox]:checked + label::before {
+  background: #fed34f;
+  color: #fff;
+}
+.container .wrapper .under_qustion ul {
+  position: relative;
+  margin-left: -30px;
+}
+.container .wrapper .under_qustion ul li {
+  float: left;
+  margin-top: 40px;
+  margin-left: 25px;
+  position: relative;
+}
+.container .wrapper .under_qustion ul li a {
+  font-family: "Roboto Condensed";
+  color: #fed34f;
+  font-size: 18px;
+  font-weight: 700;
+}
+.container .wrapper .under_qustion ul li:after {
+  position: absolute;
+  content: "";
+  top: -25px;
+  left: 50%;
+  background: url(../img/yellow_foot_dog.png);
+  width: 16px;
+  height: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
